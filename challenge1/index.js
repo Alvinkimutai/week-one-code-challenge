@@ -12,4 +12,4 @@ function StudentGradeGenerator(mark){
         return 'grade E';    
     }
 }
-console.log(StudentGradeGenerator(40));
+console.log(StudentGradeGenerator(40)); 
