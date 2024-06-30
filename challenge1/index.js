@@ -1,4 +1,4 @@
-//StudentGradeGenerator
+//StudentGradeGenerator by ALVIN KIMUTAI:
 function StudentGradeGenerator(mark){
     if (mark > 79){
         return 'grade A';
