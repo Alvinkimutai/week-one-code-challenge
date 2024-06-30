@@ -9,7 +9,7 @@ function speedDetector (speed){
         if (points < 12) {
             return `points:${points}`;
         }else {
-            return 'License suspended';
+            return 'License suspended'; 
         }
     }
 }
