@@ -1,5 +1,7 @@
 // Net Salary Calculator by ALVIN KIMUTAI
 
+const prompt = require('prompt-sync')();
+
 function calculateNetSalary( basicSalary, benefits) {
     
     const grossSalary = basicSalary +benefits;
@@ -69,4 +71,10 @@ function calculateNetSalary( basicSalary, benefits) {
      };
 }
 
-console.log(calculateNetSalary( 100000, 30000));
+const basicSalary = parseFloat(prompt('Enter Basic Salary: '));
+
+const benefits = parseFloat(prompt('Enter Benefits: '));
+
+const result = calculateNetSalary( basicSalary, benefits);
+
+console.log(result);
