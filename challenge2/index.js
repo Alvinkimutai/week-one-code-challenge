@@ -1,4 +1,5 @@
 // SpeedDetector by ALVIN KIMUTAI
+const prompt = require('prompt-sync')();
 
 function speedDetector (speed){
     if (speed <= 70) {
@@ -14,4 +15,13 @@ function speedDetector (speed){
     }
 }
 
-console.log(speedDetector(80));
+const userInput = prompt('Enter the vehicle\'s speed');
+const speed = parseFloat(userInput);
+
+if (isNaN(speed)) {
+    console.log('Invalid Input. Please enter a number');
+} else{
+    const output = speedDetector (speed);
+    console.log(output);
+}
+
